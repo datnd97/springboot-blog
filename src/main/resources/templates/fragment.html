@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<footer th:fragment="footer" class="blog-footer">
+    <div class="am-g am-g-fixed blog-fixed am-u-sm-centered blog-footer-padding">
+        <div class="am-u-sm-12 am-u-md-4- am-u-lg-4">
+            <h3>简介</h3>
+            <p class="am-text-sm">这是一个使用amazeUI做的简单的前端模板。<br> 博客/ 资讯类 前端模板 <br></p>
+        </div>
+        <div class="am-u-sm-12 am-u-md-4- am-u-lg-4">
+            <h3>社交</h3>
+            <p>
+                <a href=""><span class="am-icon-qq am-icon-fw am-primary blog-icon blog-icon"></span></a>
+                <a href=""><span class="am-icon-github am-icon-fw blog-icon blog-icon"></span></a>
+                <a href=""><span class="am-icon-weibo am-icon-fw blog-icon blog-icon"></span></a>
+                <a href=""><span class="am-icon-weixin am-icon-fw blog-icon blog-icon"></span></a>
+            </p>
+        </div>
+        <div class="am-u-sm-12 am-u-md-4- am-u-lg-4">
+            <h3>我们站在巨人的肩膀上</h3>
+            <p>
+            <ul>
+                <li>Spring Boot</li>
+                <li>Mysql</li>
+                <li>Amaze UI</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <div class="blog-text-center">© 2018 kelegele, Inc. Licensed under MIT license. Made with amazeUI By Felix</div>
+</footer>
+
+<header  th:fragment="header" class="am-g am-g-fixed blog-fixed blog-text-center blog-header">
+    <div class="am-u-sm-8 am-u-sm-centered">
+        <img width="400" th:src="@{http://kelegele-blog.oss-cn-shenzhen.aliyuncs.com/i/banner.png}"/>
+    </div>
+</header>
+
+<head th:fragment="head">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Blog | 费李撕</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" th:href="@{/assets/i/favicon.png}">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" th:href="@{/assets/i/app-icon72x72@2x.png}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" th:href="@{/assets/i/app-icon72x72@2x.png}"
+          href="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileImage" th:content="@{/assets/i/app-icon72x72@2x.png}"
+          content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link type="text/css" rel="stylesheet" th:href="@{/assets/css/amazeui.min.css}">
+    <!--<link type="text/css" rel="stylesheet" th:href="@{/assets/css/amazeui.flat.css}">-->
+    <link type="text/css" rel="stylesheet" th:href="@{/assets/css/app.css}">
+</head>
+
+</body>
+</html>

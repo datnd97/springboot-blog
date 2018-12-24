@@ -1,0 +1,48 @@
+server:
+  port: 8080
+  #use-forward-headers: true
+  servlet:
+    session:
+      timeout: 86400s
+
+spring:
+  redis:
+    database: 0
+    host: loaclhost
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 200
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+    timeout: 0ms
+  session:
+    store-type: none
+  thymeleaf:
+    mode: html5
+    servlet:
+      content-type: text/html
+    encoding: UTF-8
+    suffix: .html
+    prefix: classpath:/templates/
+    cache: false
+
+  datasource:
+    username: root
+    password: 201014
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false
+
+  devtools:
+    restart:
+      enabled: false
+      additional-paths: src/main/java
+
+mybatis:
+  type-aliases-package: com.kelegele.blog.model
+  configuration:
+    cache-enabled: true
+    default-statement-timeout: 3000
+    map-underscore-to-camel-case: true
+    use-generated-keys: true
